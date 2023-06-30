@@ -1,0 +1,2 @@
+For a few files: git update-index --assume-unchanged FILE
+For many files/directories, or more permanent for that environment, or to share file list across environments: Instead of using .gitignore, which will remove it from all version control, the file or folder can be added to : .git/info/exclude. If one wanted to pull all of the repo from the repo to local or to another server (like staging), then another local clone can be made but without the local /exclude so it will grab everything.
